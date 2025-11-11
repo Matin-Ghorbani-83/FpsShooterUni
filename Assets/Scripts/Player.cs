@@ -62,7 +62,7 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            if (raycastHit.collider != null)
+            if (raycastHit.collider != null && inHandItem ==null)
             {
                 Rigidbody rb = raycastHit.collider.GetComponent<Rigidbody>();
 
