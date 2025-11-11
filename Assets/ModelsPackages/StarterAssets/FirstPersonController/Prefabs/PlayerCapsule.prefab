@@ -184,6 +184,7 @@ GameObject:
   - component: {fileID: 1978471637655604388}
   - component: {fileID: 5420857361349278248}
   - component: {fileID: 8616685848737228376}
+  - component: {fileID: 6294464519386743731}
   m_Layer: 8
   m_Name: PlayerCapsule
   m_TagString: Player
@@ -397,3 +398,21 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &6294464519386743731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8616685848737228372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: addb0097b9494124882a1d87d3f14128, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pickableLayerMask:
+    serializedVersion: 2
+    m_Bits: 64
+  playerCameraTransform: {fileID: 4135013735270702856}
+  pickUpUI: {fileID: 0}
+  hitRange: 3
