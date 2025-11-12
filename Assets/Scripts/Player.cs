@@ -35,6 +35,8 @@ public class Player : MonoBehaviour
         Interact();
 
         Drop();
+
+        Use();
     }
 
     private void DetectPickableItems()
@@ -62,7 +64,7 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            if (raycastHit.collider != null && inHandItem ==null)
+            if (raycastHit.collider != null && inHandItem == null)
             {
                 Rigidbody rb = raycastHit.collider.GetComponent<Rigidbody>();
 
@@ -113,6 +115,20 @@ public class Player : MonoBehaviour
                 if (rb != null)
                 {
                     rb.isKinematic = false;
+                }
+            }
+        }
+    }
+    private void Use()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            if (inHandItem != null)
+            {
+                IUsable usable = inHandItem.GetComponent<IUsable>();
+                if (usable != null)
+                {
+                    usable.Use(this.gameObject);
                 }
             }
         }

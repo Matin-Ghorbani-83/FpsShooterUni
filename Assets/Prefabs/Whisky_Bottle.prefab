@@ -125,7 +125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4eb329e99b6ba3468368df2b8f7e938, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 50
+  health: 10
   destroyedObject: {fileID: 7889562756757669036, guid: 34b91cbabc16dc24c99e07a73fab147b, type: 3}
 --- !u!65 &480414003013289468
 BoxCollider:
