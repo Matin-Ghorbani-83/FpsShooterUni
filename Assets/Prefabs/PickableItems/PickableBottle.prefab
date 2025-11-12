@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 5923250290177906359}
   - component: {fileID: 960547607143314938}
   - component: {fileID: 30979803257771820}
+  - component: {fileID: 8276523639563916827}
   m_Layer: 6
   m_Name: PickableBottle
   m_TagString: Untagged
@@ -176,6 +177,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClip: {fileID: 8300000, guid: e735835e8283dca4d8a8a67795a2b3c8, type: 3}
+--- !u!114 &8276523639563916827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 734398023769554731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d49812a574c63749b562f8eb9c226bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1598954993084425779
 GameObject:
   m_ObjectHideFlags: 0

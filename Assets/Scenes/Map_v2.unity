@@ -6183,18 +6183,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2469771837251736510, guid: 37b0a3aa9a57da6478cf159caaecaa37, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 3613d3da489ebf5448364d71994729a5, type: 2}
-    - target: {fileID: 6088461417459784576, guid: 37b0a3aa9a57da6478cf159caaecaa37, type: 3}
-      propertyPath: health
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088461417459784576, guid: 37b0a3aa9a57da6478cf159caaecaa37, type: 3}
-      propertyPath: destroyedObject
-      value: 
-      objectReference: {fileID: 2556925227802033221, guid: 556a27e174f72e94886ef87a8b753e4f, type: 3}
     - target: {fileID: 8876752854896232060, guid: 37b0a3aa9a57da6478cf159caaecaa37, type: 3}
       propertyPath: m_Name
       value: Wooden_Crate (4)
@@ -15040,6 +15028,10 @@ PrefabInstance:
       propertyPath: pickUpUI
       value: 
       objectReference: {fileID: 815240353}
+    - target: {fileID: 8202207841275133310, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: -5938655980376293919, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 8616685848737228372, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
       propertyPath: m_Name
       value: PlayerCapsule
@@ -21946,24 +21938,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4000011444727360, guid: b69a894e9ba3d9c40ac239743745cae4, type: 3}
   m_PrefabInstance: {fileID: 874526731}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &875931812 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 734398023769554731, guid: c57b5769c25aa8646aa10ee0d4d4ffbf, type: 3}
-  m_PrefabInstance: {fileID: 2116083079832881515}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &875931819
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 875931812}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2c1d015b0ff1184c93312d441043340, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioClip: {fileID: 8300000, guid: e735835e8283dca4d8a8a67795a2b3c8, type: 3}
 --- !u!1001 &876381925
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26984,18 +26958,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2469771837251736510, guid: 37b0a3aa9a57da6478cf159caaecaa37, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 3613d3da489ebf5448364d71994729a5, type: 2}
-    - target: {fileID: 6088461417459784576, guid: 37b0a3aa9a57da6478cf159caaecaa37, type: 3}
-      propertyPath: health
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088461417459784576, guid: 37b0a3aa9a57da6478cf159caaecaa37, type: 3}
-      propertyPath: destroyedObject
-      value: 
-      objectReference: {fileID: 2556925227802033221, guid: 556a27e174f72e94886ef87a8b753e4f, type: 3}
     - target: {fileID: 8876752854896232060, guid: 37b0a3aa9a57da6478cf159caaecaa37, type: 3}
       propertyPath: m_Name
       value: Wooden_Crate (1)
@@ -29132,10 +29094,6 @@ PrefabInstance:
     - target: {fileID: 3248656670270259217, guid: 8360b80e381f6f141b4ccffb7ffef5e5, type: 3}
       propertyPath: m_Name
       value: Whisky_Bottle (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6743747254504984417, guid: 8360b80e381f6f141b4ccffb7ffef5e5, type: 3}
-      propertyPath: health
-      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6825553136473921546, guid: 8360b80e381f6f141b4ccffb7ffef5e5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -35814,10 +35772,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Whisky_Bottle (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 6743747254504984417, guid: 8360b80e381f6f141b4ccffb7ffef5e5, type: 3}
-      propertyPath: health
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 6825553136473921546, guid: 8360b80e381f6f141b4ccffb7ffef5e5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 13.435
@@ -35985,11 +35939,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000012999968834, guid: 46132fa6877a42947bf1f7f15c09f435, type: 3}
   m_PrefabInstance: {fileID: 1412860651}
-  m_PrefabAsset: {fileID: 0}
---- !u!82 &1413034504 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 2409288717830850599, guid: c2b05f5e0bc5fd84291a1adcd39fc97c, type: 3}
-  m_PrefabInstance: {fileID: 8403684543406539296}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1413393071
 PrefabInstance:
@@ -42199,11 +42148,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65feeeb562c61c744aa87b8eb394ffcf, type: 3}
---- !u!82 &1706575306 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 8897596239387500006, guid: c57b5769c25aa8646aa10ee0d4d4ffbf, type: 3}
-  m_PrefabInstance: {fileID: 2116083079832881515}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1712570448
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46355,18 +46299,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2469771837251736510, guid: 37b0a3aa9a57da6478cf159caaecaa37, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 3613d3da489ebf5448364d71994729a5, type: 2}
-    - target: {fileID: 6088461417459784576, guid: 37b0a3aa9a57da6478cf159caaecaa37, type: 3}
-      propertyPath: health
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088461417459784576, guid: 37b0a3aa9a57da6478cf159caaecaa37, type: 3}
-      propertyPath: destroyedObject
-      value: 
-      objectReference: {fileID: 2556925227802033221, guid: 556a27e174f72e94886ef87a8b753e4f, type: 3}
     - target: {fileID: 8876752854896232060, guid: 37b0a3aa9a57da6478cf159caaecaa37, type: 3}
       propertyPath: m_Name
       value: Wooden_Crate (3)
@@ -48677,10 +48609,6 @@ PrefabInstance:
     - target: {fileID: 3248656670270259217, guid: 8360b80e381f6f141b4ccffb7ffef5e5, type: 3}
       propertyPath: m_Name
       value: Whisky_Bottle (4)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6743747254504984417, guid: 8360b80e381f6f141b4ccffb7ffef5e5, type: 3}
-      propertyPath: health
-      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6825553136473921546, guid: 8360b80e381f6f141b4ccffb7ffef5e5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -51148,18 +51076,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2469771837251736510, guid: 37b0a3aa9a57da6478cf159caaecaa37, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 3613d3da489ebf5448364d71994729a5, type: 2}
-    - target: {fileID: 6088461417459784576, guid: 37b0a3aa9a57da6478cf159caaecaa37, type: 3}
-      propertyPath: health
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088461417459784576, guid: 37b0a3aa9a57da6478cf159caaecaa37, type: 3}
-      propertyPath: destroyedObject
-      value: 
-      objectReference: {fileID: 2556925227802033221, guid: 556a27e174f72e94886ef87a8b753e4f, type: 3}
     - target: {fileID: 8876752854896232060, guid: 37b0a3aa9a57da6478cf159caaecaa37, type: 3}
       propertyPath: m_Name
       value: Wooden_Crate (2)
@@ -51604,10 +51520,6 @@ PrefabInstance:
     - target: {fileID: 3248656670270259217, guid: 8360b80e381f6f141b4ccffb7ffef5e5, type: 3}
       propertyPath: m_Name
       value: Whisky_Bottle (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6743747254504984417, guid: 8360b80e381f6f141b4ccffb7ffef5e5, type: 3}
-      propertyPath: health
-      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6825553136473921546, guid: 8360b80e381f6f141b4ccffb7ffef5e5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -52721,58 +52633,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: PickableBottle
       objectReference: {fileID: 0}
-    - target: {fileID: 960547607143314938, guid: c57b5769c25aa8646aa10ee0d4d4ffbf, type: 3}
-      propertyPath: <OnUse>k__BackingField.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 960547607143314938, guid: c57b5769c25aa8646aa10ee0d4d4ffbf, type: 3}
-      propertyPath: <OnUse>k__BackingField.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 960547607143314938, guid: c57b5769c25aa8646aa10ee0d4d4ffbf, type: 3}
-      propertyPath: <OnUse>k__BackingField.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 960547607143314938, guid: c57b5769c25aa8646aa10ee0d4d4ffbf, type: 3}
-      propertyPath: <OnUse>k__BackingField.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 875931819}
-    - target: {fileID: 960547607143314938, guid: c57b5769c25aa8646aa10ee0d4d4ffbf, type: 3}
-      propertyPath: <OnUse>k__BackingField.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 1706575306}
-    - target: {fileID: 960547607143314938, guid: c57b5769c25aa8646aa10ee0d4d4ffbf, type: 3}
-      propertyPath: <OnUse>k__BackingField.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 960547607143314938, guid: c57b5769c25aa8646aa10ee0d4d4ffbf, type: 3}
-      propertyPath: <OnUse>k__BackingField.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 960547607143314938, guid: c57b5769c25aa8646aa10ee0d4d4ffbf, type: 3}
-      propertyPath: <OnUse>k__BackingField.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PlayClip
-      objectReference: {fileID: 0}
-    - target: {fileID: 960547607143314938, guid: c57b5769c25aa8646aa10ee0d4d4ffbf, type: 3}
-      propertyPath: <OnUse>k__BackingField.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: Play
-      objectReference: {fileID: 0}
-    - target: {fileID: 960547607143314938, guid: c57b5769c25aa8646aa10ee0d4d4ffbf, type: 3}
-      propertyPath: <OnUse>k__BackingField.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: PlaySoundOnUse, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 960547607143314938, guid: c57b5769c25aa8646aa10ee0d4d4ffbf, type: 3}
-      propertyPath: <OnUse>k__BackingField.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: UnityEngine.AudioSource, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 960547607143314938, guid: c57b5769c25aa8646aa10ee0d4d4ffbf, type: 3}
-      propertyPath: <OnUse>k__BackingField.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 960547607143314938, guid: c57b5769c25aa8646aa10ee0d4d4ffbf, type: 3}
-      propertyPath: <OnUse>k__BackingField.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 7031416707726077301, guid: c57b5769c25aa8646aa10ee0d4d4ffbf, type: 3}
       propertyPath: m_LocalPosition.x
       value: 18.945
@@ -52813,17 +52673,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8897596239387500006, guid: c57b5769c25aa8646aa10ee0d4d4ffbf, type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 734398023769554731, guid: c57b5769c25aa8646aa10ee0d4d4ffbf, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 875931819}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c57b5769c25aa8646aa10ee0d4d4ffbf, type: 3}
 --- !u!1001 &2269692398745754168
 PrefabInstance:
@@ -52873,18 +52726,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2469771837251736510, guid: 37b0a3aa9a57da6478cf159caaecaa37, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 3613d3da489ebf5448364d71994729a5, type: 2}
-    - target: {fileID: 6088461417459784576, guid: 37b0a3aa9a57da6478cf159caaecaa37, type: 3}
-      propertyPath: health
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 6088461417459784576, guid: 37b0a3aa9a57da6478cf159caaecaa37, type: 3}
-      propertyPath: destroyedObject
-      value: 
-      objectReference: {fileID: 2556925227802033221, guid: 556a27e174f72e94886ef87a8b753e4f, type: 3}
     - target: {fileID: 8876752854896232060, guid: 37b0a3aa9a57da6478cf159caaecaa37, type: 3}
       propertyPath: m_Name
       value: Wooden_Crate
@@ -52945,42 +52786,6 @@ PrefabInstance:
     - target: {fileID: 3722527902202734128, guid: c2b05f5e0bc5fd84291a1adcd39fc97c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7119557228140801142, guid: c2b05f5e0bc5fd84291a1adcd39fc97c, type: 3}
-      propertyPath: <OnUse>k__BackingField.m_PersistentCalls.m_Calls.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7119557228140801142, guid: c2b05f5e0bc5fd84291a1adcd39fc97c, type: 3}
-      propertyPath: <OnUse>k__BackingField.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7119557228140801142, guid: c2b05f5e0bc5fd84291a1adcd39fc97c, type: 3}
-      propertyPath: <OnUse>k__BackingField.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 1413034504}
-    - target: {fileID: 7119557228140801142, guid: c2b05f5e0bc5fd84291a1adcd39fc97c, type: 3}
-      propertyPath: <OnUse>k__BackingField.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7119557228140801142, guid: c2b05f5e0bc5fd84291a1adcd39fc97c, type: 3}
-      propertyPath: <OnUse>k__BackingField.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: Play
-      objectReference: {fileID: 0}
-    - target: {fileID: 7119557228140801142, guid: c2b05f5e0bc5fd84291a1adcd39fc97c, type: 3}
-      propertyPath: <OnUse>k__BackingField.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: UnityEngine.AudioSource, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 7119557228140801142, guid: c2b05f5e0bc5fd84291a1adcd39fc97c, type: 3}
-      propertyPath: <OnUse>k__BackingField.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 7308765136628183407, guid: c2b05f5e0bc5fd84291a1adcd39fc97c, type: 3}
-      propertyPath: lengthInSec
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7308765136628183407, guid: c2b05f5e0bc5fd84291a1adcd39fc97c, type: 3}
-      propertyPath: InitialModule.startLifetime.scalar
-      value: 0.15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
