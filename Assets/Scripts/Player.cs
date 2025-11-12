@@ -12,10 +12,10 @@ public class Player : MonoBehaviour
     private Transform playerCameraTransform;
 
     [SerializeField]
-    private Transform pickUpParent;
+    private Transform pickUpParentTransfrom;
 
     [SerializeField]
-    private GameObject inHandItem;
+    private GameObject inHandItemGameObject;
 
     [SerializeField]
     private GameObject pickUpUI;
@@ -53,7 +53,7 @@ public class Player : MonoBehaviour
             pickUpUI.SetActive(false);
         }
 
-        if (inHandItem != null) return;
+        if (inHandItemGameObject != null) return;
 
         if (Physics.Raycast(playerCameraTransform.position, playerCameraTransform.forward, out raycastHit, hitRange, pickableLayerMask))
         {
@@ -64,40 +64,47 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            if (raycastHit.collider != null && inHandItem == null)
+            if (raycastHit.collider != null && inHandItemGameObject == null)
             {
                 Rigidbody rb = raycastHit.collider.GetComponent<Rigidbody>();
 
-                if (raycastHit.collider.GetComponent<Food>())
+                IPickable pickable = raycastHit.collider.GetComponent<IPickable>();
+                if (pickable != null)
                 {
-                    Debug.Log("Its Food");
-                    inHandItem = raycastHit.collider.gameObject;
-
-                    inHandItem.transform.position = Vector3.zero;
-                    inHandItem.transform.rotation = Quaternion.identity;
-                    inHandItem.transform.SetParent(pickUpParent.transform, false);
-
-                    if (rb != null)
-                    {
-                        rb.isKinematic = true;
-                    }
-                    return;
+                    inHandItemGameObject = pickable.PickUp();
+                    inHandItemGameObject.transform.SetParent(pickUpParentTransfrom.transform, false);
                 }
-                if (raycastHit.collider.GetComponent<Weapon>())
-                {
-                    Debug.Log("Its Food");
-                    inHandItem = raycastHit.collider.gameObject;
 
-                    inHandItem.transform.position = Vector3.zero;
-                    inHandItem.transform.rotation = Quaternion.identity;
-                    inHandItem.transform.SetParent(pickUpParent.transform, false);
+                //if (raycastHit.collider.GetComponent<Food>())
+                //{
+                //    Debug.Log("Its Food");
+                //    inHandItemGameObject = raycastHit.collider.gameObject;
 
-                    if (rb != null)
-                    {
-                        rb.isKinematic = true;
-                    }
-                    return;
-                }
+                //    inHandItemGameObject.transform.position = Vector3.zero;
+                //    inHandItemGameObject.transform.rotation = Quaternion.identity;
+                //    inHandItemGameObject.transform.SetParent(pickUpParentTransfrom.transform, false);
+
+                //    if (rb != null)
+                //    {
+                //        rb.isKinematic = true;
+                //    }
+                //    return;
+                //}
+                //if (raycastHit.collider.GetComponent<Weapon>())
+                //{
+                //    Debug.Log("Its Food");
+                //    inHandItemGameObject = raycastHit.collider.gameObject;
+
+                //    inHandItemGameObject.transform.position = Vector3.zero;
+                //    inHandItemGameObject.transform.rotation = Quaternion.identity;
+                //    inHandItemGameObject.transform.SetParent(pickUpParentTransfrom.transform, false);
+
+                //    if (rb != null)
+                //    {
+                //        rb.isKinematic = true;
+                //    }
+                //    return;
+                //}
 
             }
         }
@@ -106,10 +113,10 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            if (inHandItem != null)
+            if (inHandItemGameObject != null)
             {
-                inHandItem.transform.SetParent(null);
-                inHandItem = null;
+                inHandItemGameObject.transform.SetParent(null);
+                inHandItemGameObject = null;
 
                 Rigidbody rb = raycastHit.collider.GetComponent<Rigidbody>();
                 if (rb != null)
@@ -123,9 +130,9 @@ public class Player : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            if (inHandItem != null)
+            if (inHandItemGameObject != null)
             {
-                IUsable usable = inHandItem.GetComponent<IUsable>();
+                IUsable usable = inHandItemGameObject.GetComponent<IUsable>();
                 if (usable != null)
                 {
                     usable.Use(this.gameObject);
