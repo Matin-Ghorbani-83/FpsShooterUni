@@ -1,18 +1,18 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
-public class Food : MonoBehaviour
+public class Food : MonoBehaviour, IUsable
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [field: SerializeField]
+    public UnityEvent OnUse { get; private set; }
 
-    // Update is called once per frame
-    void Update()
+    public void Use(GameObject actor)
     {
-        
+        Debug.Log("Eat Food !");
+        OnUse?.Invoke();
+        Destroy(this.gameObject);
     }
 }
