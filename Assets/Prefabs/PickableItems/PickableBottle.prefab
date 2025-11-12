@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5600553359554137244}
   - component: {fileID: 1676718919857115747}
   - component: {fileID: 5923250290177906359}
+  - component: {fileID: 960547607143314938}
   m_Layer: 6
   m_Name: PickableBottle
   m_TagString: Untagged
@@ -133,3 +134,15 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 11.007439, y: 29.890406, z: 11.573905}
   m_Center: {x: -0.0000009536743, y: 14.944909, z: -0.0000009536743}
+--- !u!114 &960547607143314938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 734398023769554731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdce310cf4378684facc97430ef3f46f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
