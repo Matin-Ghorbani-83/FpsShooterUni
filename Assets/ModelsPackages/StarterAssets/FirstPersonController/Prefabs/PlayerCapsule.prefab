@@ -149,7 +149,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7862344889436842245}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: PickUpTransform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -414,5 +414,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   playerCameraTransform: {fileID: 4135013735270702856}
+  pickUpParent: {fileID: 7862344889436842245}
+  inHandItem: {fileID: 0}
   pickUpUI: {fileID: 0}
   hitRange: 3
