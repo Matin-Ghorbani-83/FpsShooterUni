@@ -152,7 +152,7 @@ public class PlayerSaveDemo : MonoBehaviour
             return;
         }
 
-        transform.posi = data.position.ToVector3();
+        transform.position = data.position.ToVector3();
         Debug.Log($"[APPLY] position -> {transform.position}");
     }
 
