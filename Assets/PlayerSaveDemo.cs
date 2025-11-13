@@ -29,7 +29,7 @@ public class PlayerSaveData
 public class PlayerSaveDemo : MonoBehaviour
 {
     [Header("Encryption (AES)")]
-    public bool useEncryption = false;  // رمزگذاری اختیاری
+    public bool useEncryption = false;
 
     static readonly byte[] AesKey = new byte[32] {
         21,12,33,44,55,66,77,88,99,10,11,12,13,14,15,16,
@@ -45,7 +45,6 @@ public class PlayerSaveDemo : MonoBehaviour
 
     string RootPath => Application.persistentDataPath;
 
-    // --- AES helpers ---
     byte[] AESEncrypt(byte[] plain)
     {
         using var aes = Aes.Create();
@@ -80,7 +79,6 @@ public class PlayerSaveDemo : MonoBehaviour
         }
     }
 
-    // --- Save ---
     public void Save()
     {
         try
@@ -110,7 +108,6 @@ public class PlayerSaveDemo : MonoBehaviour
         }
     }
 
-    // --- Load ---
     public void Load()
     {
         try
@@ -155,7 +152,7 @@ public class PlayerSaveDemo : MonoBehaviour
             return;
         }
 
-        transform.position = data.position.ToVector3();
+        transform.posi = data.position.ToVector3();
         Debug.Log($"[APPLY] position -> {transform.position}");
     }
 
